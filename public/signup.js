@@ -42,7 +42,7 @@ function enviarDadosParaDatabase(user) {
         // Dados adicionais armazenados com sucesso, redireciona para a página de login
         console.log('Dados adicionais armazenados com sucesso!');
         alert('Cadastro realizado com sucesso!');
-        window.location.href = 'login.html'; 
+        window.location.href = 'index.html'; 
     }).catch((error) => {
         // Erro ao salvar dados adicionais, mostra mensagem de erro
         console.error('Erro ao enviar dados adicionais:', error);

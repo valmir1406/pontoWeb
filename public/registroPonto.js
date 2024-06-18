@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.error('Elementos do formulário não encontrados.');
             }
         } else {
-            window.location.href = 'login.html';
+            window.location.href = 'index.html';
         }
     });
 
