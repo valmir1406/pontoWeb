@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Ponto</title>
+    <link rel="stylesheet" href="/styleRegistroPonto.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js" defer></script>
+    <script src="/app.js" defer></script>
+    <script src="/registroPonto.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="login.html">Home</a></li>
+            <li><a href="registroPonto.html">Registro de Ponto</a></li>
+            <li><a href="consultaRegistros.html">Consulta de Registros</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Registro de Ponto</h1>
+    </header>
+    <form id="registroPontoForm">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" readonly><br>
+
+        <label for="dataHora">Data e Hora:</label>
+        <input type="text" id="dataHora" name="dataHora" readonly><br>
+
+        <label for="imagem">Capturar Imagem:</label>
+        <input type="file" accept="image/*" capture="camera" id="imagem" name="imagem"><br>
+
+        <label for="localizacao">Localização:</label>
+        <input type="text" id="localizacao" name="localizacao" readonly><br>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" readonly><br>
+
+        <button type="submit">Registrar Ponto</button>
+    </form>
+</body>
+</html>

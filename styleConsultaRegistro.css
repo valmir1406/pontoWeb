@@ -1,0 +1,99 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: center; /* Centraliza o conteúdo na horizontal */
+}
+
+/* Estilo para a navegação */
+nav {
+    margin-bottom: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    width: 100%; /* Ocupa toda a largura disponível */
+    text-align: left; /* Alinha os itens à esquerda */
+}
+
+.menu li {
+    display: inline-block; /* Exibe os itens lado a lado */
+    margin-right: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+.menu li a:hover {
+    color: #007bff; /* Nova cor ao passar o mouse */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilo para o cabeçalho h1 */
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o formulário de registro de ponto */
+#registroPontoForm {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
